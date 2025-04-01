@@ -45,7 +45,7 @@ struct homeView: View {
                 Spacer(minLength: 0)
             }
         }
-        .navigationDestination(isPresented: $showDetailView) { detailView(coin: $selectedcoin) }
+        .navigationDestination(isPresented: $showDetailView) { detailLoadingView(coin: $selectedcoin) }
     }
 }
 
