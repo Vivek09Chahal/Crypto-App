@@ -1,4 +1,4 @@
-![Simulator Screenshot - iPhone 16 Pro - 2025-04-02 at 12 43 42](https://github.com/user-attachments/assets/ccc9ff54-6566-4de0-b761-a8e36b7fccc8)# Crypto APP | LINK
+# Crypto APP | LINK
 
 A comprehensive cryptocurrency tracking application built with SwiftUI that provides detailed information about various cryptocurrencies and market performance.
 
