@@ -1,0 +1,22 @@
+# Crypto APP | LINK
+
+A comprehensive cryptocurrency tracking application built with SwiftUI that provides detailed information about various cryptocurrencies and their market performance.
+
+## Features
+- Real-time cryptocurrency data tracking
+- Seven-day historical price charts
+- Local data persistence
+- Responsive and modern UI
+
+## Technical Stack
+- **SwiftUI**: Modern declarative UI framework for building the interface
+- **CoreData**: Local storage for caching cryptocurrency data and images
+- **Combine**: Reactive programming framework for handling real-time data updates
+- **State Management**: Implemented using `@StateObject`, `@Published`, and `@Binding` properties
+
+## Architecture
+- Built using MVVM pattern
+- Reactive data flow with Combine publishers
+- Efficient state management using SwiftUI's property wrappers
+- Persistent storage implementation for offline access
+

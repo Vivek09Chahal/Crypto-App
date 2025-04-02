@@ -12,6 +12,9 @@ class detailViewModel: ObservableObject {
     
     @Published var overviewStatistic: [statisticModel] = []
     @Published var additionalStatistic: [statisticModel] = []
+    @Published var coinDescription: String? = nil
+    @Published var websiteURL: String? = nil
+    @Published var redditURL: String? = nil
     
     @Published var coin: coinModel
     private let coinDetailService: coinDetailDataService
@@ -32,6 +35,15 @@ class detailViewModel: ObservableObject {
                 self?.additionalStatistic = returnedArrays.additional
             }
             .store(in: &cancallable)
+        
+        coinDetailService.$coinDetails
+            .sink{ [weak self] returnedCoinDetails in
+                self?.coinDescription = returnedCoinDetails?.readableDescription
+                self?.websiteURL = returnedCoinDetails?.links?.homepage?.first
+                self?.redditURL = returnedCoinDetails?.links?.subredditURL
+            }
+            .store(in: &cancallable)
+        
     }
     
     private func mapDataToStatistic (coinDetailModel: coinDetailModel?, coinModel: coinModel) -> (overview: [statisticModel], additional:[statisticModel]){
