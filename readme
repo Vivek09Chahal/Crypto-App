@@ -20,3 +20,11 @@ A comprehensive cryptocurrency tracking application built with SwiftUI that prov
 - Efficient state management using SwiftUI's property wrappers
 - Persistent storage implementation for offline access
 
+## Screenshots
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+    <img src="/Crypto App/Screenshots/ss1.png" width="300"/>
+    <img src="/Crypto App/Screenshots/ss1.png" width="300"/>
+    <img src="/Crypto App/Screenshots/ss1.png" width="300"/>
+    <img src="/Crypto App/Screenshots/ss1.png" width="300"/>
+</div>
